@@ -25,7 +25,7 @@ export default function EditProductForm({ children }: { children: React.ReactNod
          toast.success(state.success)
          router.push('/admin/products')
       }
-   }, [state])
+   }, [state, router])
 
 
    return (

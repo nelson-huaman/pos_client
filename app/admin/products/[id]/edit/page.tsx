@@ -4,7 +4,6 @@ import Heading from "@/components/ui/Heading";
 import { ProductSchema } from "@/src/schemas";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { json } from "zod";
 
 async function getProduct(id: string) {
    const url = `${process.env.API_URL}/products/${id}`

@@ -32,6 +32,7 @@ export const useStore = create<Store>()(devtools((set, get) => ({
    addToCard: (product) => {
 
       const { id: productId, categoryId, ...data } = product
+      void categoryId
       let contents: ShoppingCard = []
 
       const duplicated = get().contents.findIndex(item => item.productId === productId)
